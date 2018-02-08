@@ -2,6 +2,7 @@ package gawe.imb.karya.presenter.base;
 
 /**
  * Created by korneliussendy on 1/22/18.
+ *
  */
 
 public interface BaseView {

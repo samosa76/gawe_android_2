@@ -17,6 +17,7 @@ import karya.imb.gawe.view.er.urgentPassive.ERUrgentPassiveFragment;
 
 /**
  * Created by korneliussendy on 1/26/18.
+ *
  */
 
 public class ERUrgentFragment extends BaseTabFragment<ERUrgentPresenter> implements ERUrgentView {

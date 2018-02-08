@@ -8,6 +8,7 @@ import gawe.imb.karya.presenter.base.BasePresenter;
 
 /**
  * Created by korneliussendy on 1/27/18.
+ *
  */
 
 public class ERUrgentPresenter extends BasePresenter<ERUrgentView> {

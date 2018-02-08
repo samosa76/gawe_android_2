@@ -27,6 +27,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by korneliussendy on 2/6/18.
+ *
  */
 
 public class JobManager {

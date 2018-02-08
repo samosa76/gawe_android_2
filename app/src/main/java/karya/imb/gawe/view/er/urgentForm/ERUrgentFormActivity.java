@@ -42,6 +42,7 @@ import static karya.imb.gawe.view.er.urgent.ERUrgentFragment.NEW_URGENT_CATEGORY
 
 /**
  * Created by korneliussendy on 2/6/18.
+ *
  */
 
 public class ERUrgentFormActivity extends ERBaseActivity<ERUrgentFormPresenter> implements ERUrgentFormView {

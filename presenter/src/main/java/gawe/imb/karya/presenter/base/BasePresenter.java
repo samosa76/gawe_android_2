@@ -5,6 +5,7 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * Created by korneliussendy on 1/22/18.
+ *
  */
 
 public abstract class BasePresenter<V> {

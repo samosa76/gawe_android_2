@@ -23,6 +23,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by korneliussendy on 1/28/18.
+ *
  */
 
 public class BursaManager {

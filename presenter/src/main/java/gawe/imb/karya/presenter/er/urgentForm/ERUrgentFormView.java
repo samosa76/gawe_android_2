@@ -10,6 +10,7 @@ import gawe.imb.karya.presenter.base.BaseView;
 
 /**
  * Created by korneliussendy on 2/6/18.
+ *
  */
 
 public interface ERUrgentFormView extends BaseView {
