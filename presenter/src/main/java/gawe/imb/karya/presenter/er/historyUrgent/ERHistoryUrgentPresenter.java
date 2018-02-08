@@ -9,6 +9,9 @@ import gawe.imb.karya.presenter.base.BasePresenter;
 public class ERHistoryUrgentPresenter extends BasePresenter<ERHistoryUrgentView> {
 
     public ERHistoryUrgentPresenter(ERHistoryUrgentView view) {
+
+
+
         attachView(view);
     }
 
