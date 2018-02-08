@@ -28,6 +28,14 @@ public class Constants {
     public static final Long BASE_ID = 1000000000L;
     public static final String CONNECTOR = "__AMAN__";
 
+    public static final String GENDER_MALE = "M";
+    public static final String GENDER_FEMALE = "F";
+
+    public static final int GENDER_CODE_ANY_GENDER = 0;
+    public static final int GENDER_CODE_FEMALE_ONLY = 1;
+    public static final int GENDER_CODE_MALE_ONLY = 2;
+    public static final int GENDER_CODE_MALE_AND_FEMALE = 3;
+
     public static final String REF_USER_EMPLOYEE = BASE_EMPLOYEE_DB + "user";
     public static final String REF_USER_EMPLOYER = BASE_EMPLOYER_DB + "user";
     public static final String REF_USER_UNIVERSAL = BASE_UNIVERSAL_DB;

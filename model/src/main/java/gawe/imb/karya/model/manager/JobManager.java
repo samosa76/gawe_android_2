@@ -1,6 +1,8 @@
 package gawe.imb.karya.model.manager;
 
 
+import android.util.Log;
+
 import com.google.common.base.Strings;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -12,6 +14,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import gawe.imb.karya.mainlibs.utils.Constants;
+import gawe.imb.karya.model.modules.GaweWebserviceAPI;
+import gawe.imb.karya.model.modules.GaweWebserviceClient;
 import gawe.imb.karya.model.objects.Job;
 import gawe.imb.karya.model.utils.Helper;
 import io.reactivex.Observable;
@@ -117,8 +122,8 @@ public class JobManager {
         return observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
     }
 
-    public static Single<Job> CreateJob(Job job) {
-        return Single.create(emitter -> Helper.getDatabase()
+    public static Single<Job> createJob(Job job) {
+        Single<Job> single = Single.create(emitter -> Helper.getDatabase()
                 .getReference(REF_LAST_MISSION_ID)
                 .runTransaction(new Transaction.Handler() {
                     @Override
@@ -133,6 +138,7 @@ public class JobManager {
 
                     @Override
                     public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
+                        Log.i("@@@@", "transaction complete");
                         if (databaseError != null) {
                             emitter.onError(databaseError.toException());
                             return;
@@ -147,5 +153,37 @@ public class JobManager {
                     }
                 }, false));
 
+        return single;
+    }
+
+    public static Single<Job> notifyServer(Job job) {
+
+        Single<Job> single = LangManager.getLanguage()
+                .flatMap(s -> {
+                    Log.i("@@@@", "notify Server");
+                    GaweWebserviceAPI api = GaweWebserviceClient.getClient().create(GaweWebserviceAPI.class);
+
+                    return api.createJob(
+                            job.getEmployerId(),
+                            job.getLat(),
+                            job.getLng(),
+                            job.getJobCategory(),
+                            job.getDuration(),
+                            job.getDescription(),
+                            job.getNote(),
+                            job.getWage(),
+                            job.getAddress(),
+                            s,
+                            job.getGenderType() == Constants.GENDER_CODE_FEMALE_ONLY ?
+                                    Constants.GENDER_FEMALE : Constants.GENDER_MALE);
+                })
+                .doOnError(throwable -> Log.e("@@@@", "ERROR 1", throwable))
+                .flatMap(stringSingleResponse -> {
+                    Log.i("@@@@", "Server Notified");
+                    return Single.just(job);
+                })
+                .doOnError(throwable -> Log.e("@@@@", "ERROR 2", throwable));
+
+        return single.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
     }
 }

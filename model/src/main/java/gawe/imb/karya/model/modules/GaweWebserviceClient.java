@@ -65,11 +65,11 @@ public class GaweWebserviceClient {
 
         //LOGGING
 
-        if (BuildConfig.DEBUG) {
+//        if (BuildConfig.DEBUG) {
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
-            loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.HEADERS);
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
             httpClient.addInterceptor(loggingInterceptor);
-        }
+//        }
         return httpClient.build();
     }
 

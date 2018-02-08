@@ -299,6 +299,10 @@ public class ERUrgentFormActivity extends ERBaseActivity<ERUrgentFormPresenter> 
     @Override
     public void showConfirm(Long creditPerMission, Long point) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure?");
+        builder.setPositiveButton("yes", (dialogInterface, i) -> presenter.onCreateJobConfirmed());
+        builder.setNegativeButton("no", (dialogInterface, i) -> dialogInterface.dismiss());
+        builder.create().show();
     }
 
     @Override
@@ -308,7 +312,11 @@ public class ERUrgentFormActivity extends ERBaseActivity<ERUrgentFormPresenter> 
 
     @Override
     public void toTopUpPage() {
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Not enough credit?");
+        builder.setPositiveButton("top up", (dialogInterface, i) -> presenter.onCreateJobConfirmed());
+        builder.setNegativeButton("cancel", (dialogInterface, i) -> dialogInterface.dismiss());
+        builder.create().show();
     }
 
     @Override

@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by korneliussendy on 2/8/18.
+ *
  */
 
 public class SingleResponse<T> {

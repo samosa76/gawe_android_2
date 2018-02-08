@@ -10,25 +10,25 @@ import io.reactivex.Single;
 
 public class LangManager {
 
-    public Single<String> getLanguage() {
+    public static Single<String> getLanguage() {
         return Single.just(
                 Resources.getSystem().getConfiguration().locale.getLanguage()
         );
     }
 
-    public Single<String> getCountry() {
+    public static Single<String> getCountry() {
         return Single.just(
                 Resources.getSystem().getConfiguration().locale.getCountry()
         );
     }
 
-    public Single<String> getISO3Language() {
+    public static Single<String> getISO3Language() {
         return Single.just(
                 Resources.getSystem().getConfiguration().locale.getISO3Language()
         );
     }
 
-    public Single<String> getISO3Country() {
+    public static Single<String> getISO3Country() {
         return Single.just(
                 Resources.getSystem().getConfiguration().locale.getISO3Country()
         );

@@ -5,6 +5,7 @@ import com.google.common.base.Strings;
 import java.util.ArrayList;
 import java.util.List;
 
+import gawe.imb.karya.mainlibs.utils.Constants;
 import gawe.imb.karya.model.manager.CreditManager;
 import gawe.imb.karya.model.manager.GeoCodeManager;
 import gawe.imb.karya.model.manager.GsonManager;
@@ -106,26 +107,38 @@ public class ERUrgentFormPresenter extends BasePresenter<ERUrgentFormView> {
         view.genderLoaded(genderStrings, defaultGender);
         selectedGender = genders.get(defaultGender);
 
+        job.setGenderType(genders.get(defaultGender).equals(Constants.GENDER_FEMALE) ?
+                Constants.GENDER_CODE_FEMALE_ONLY : Constants.GENDER_CODE_MALE_ONLY
+        );
+
         int defaultDuration = 4;
         view.durationLoaded(durationStrings, defaultDuration);
         selectedDuration = durations.get(defaultDuration);
+
+        job.setDuration(defaultDuration);
     }
 
     public void onGenderChanged(int position) {
         this.selectedGender = genders.get(position);
+        job.setGenderType(genders.get(position).equals(Constants.GENDER_FEMALE) ?
+                Constants.GENDER_CODE_FEMALE_ONLY : Constants.GENDER_CODE_MALE_ONLY
+        );
     }
 
     public void onDurationChanged(int position) {
         selectedDuration = durations.get(position);
+        job.setDuration(durations.get(position));
         loadWage();
     }
 
     public void onDescriptionUpdated(String description) {
         this.selectedDescription = description;
+        job.setDescription(description);
     }
 
     public void onNoteUpdated(String note) {
         this.selectedNote = note;
+        job.setNote(note);
     }
 
     public void onCategoryClick() {
@@ -270,17 +283,18 @@ public class ERUrgentFormPresenter extends BasePresenter<ERUrgentFormView> {
                                 .toSingle(() -> true))
                 .flatMap(success -> {
                     if (success) {
-                        return JobManager.CreateJob(job);
+                        return JobManager.createJob(job);
                     } else {
                         return Single.error(new Exception());
                     }
                 })
-                .subscribe((job1, throwable) -> {
+                .flatMap(JobManager::notifyServer)
+                .subscribe((job2, throwable) -> {
                     if (throwable != null) {
                         view.hideLoadingCreateJob();
                         view.errorCreateJob(throwable);
                     } else {
-                        view.successCreateJob(job1);
+                        view.successCreateJob(job2);
                     }
                 });
     }
@@ -292,7 +306,6 @@ public class ERUrgentFormPresenter extends BasePresenter<ERUrgentFormView> {
     public void onSuccessTopUp() {
 
     }
-
 
     private String errorMessage = "";
 
