@@ -30,4 +30,13 @@ public interface SignUpView extends BaseView {
 
     void errorUpdateProfileImage(String message);
 
+    String retrieveReferrerId();
+
+    void showLoadingCreateUser();
+
+    void hideLoadingCreateUser();
+
+    void failedCreateUser(Throwable throwable);
+
+    void successCreateUser();
 }

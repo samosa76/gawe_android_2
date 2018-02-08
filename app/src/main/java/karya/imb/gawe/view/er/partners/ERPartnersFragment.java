@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -168,6 +169,11 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
     }
 
     @Override
+    public void openPartnerDetails(GaweBrowse partner, String categoryId) {
+
+    }
+
+    @Override
     public void showLoadingBrowse() {
         progressBrowse.setVisibility(View.VISIBLE);
     }
@@ -182,7 +188,6 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
         list.clear();
         adapter.notifyDataSetChanged();
     }
-
 
     private class BrowseAdapter extends BaseRecyclerAdapter {
 
@@ -213,6 +218,7 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
                     .placeholder(R.drawable.logo_g_yellow_transparent)
                     .error(R.drawable.logo_g_yellow_transparent)
                     .into(holder.ivImage);
+            holder.parent.setOnClickListener(view -> itemSelected(position));
         }
 
         @Override
@@ -222,7 +228,7 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
 
         @Override
         public void itemSelected(int position) {
-
+            presenter.onPartnerClick((GaweBrowse) getItem(position));
         }
 
         @Override
@@ -233,6 +239,7 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
 
         class Holder extends RecyclerView.ViewHolder {
 
+            View parent;
             CircleImageView ivImage;
             TextView tvRating;
             TextView tvName;
@@ -241,6 +248,7 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
 
             Holder(View v) {
                 super(v);
+                parent = v.findViewById(R.id.parent);
                 ivImage = v.findViewById(R.id.ivImage);
                 tvRating = v.findViewById(R.id.tvRating);
                 tvName = v.findViewById(R.id.tvName);

@@ -409,6 +409,10 @@ public class UserManager {
         saveUserOnly(mapUser, userId);
     }
 
+    public static Completable createNewUser() {
+        return Completable.complete();
+    }
+
     private static final String BASE_REFERRAL_CODE = BASE_DB + "referral_code/";
     public static final String BASE_EMPLOYEE_REF_CODE = BASE_REFERRAL_CODE + "employee/";
     public static final String BASE_EMPLOYER_REF_CODE = BASE_REFERRAL_CODE + "employer/";

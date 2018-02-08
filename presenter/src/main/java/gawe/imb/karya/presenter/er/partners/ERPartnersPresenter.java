@@ -108,6 +108,10 @@ public class ERPartnersPresenter extends BasePresenter<ERPartnersView> {
         loadBrowse(lat, lng, getSelectedFilter());
     }
 
+    public void onPartnerClick(GaweBrowse item) {
+        view.openPartnerDetails(item, selectedFilter.getCategory());
+    }
+
     private BrowseFilter getSelectedFilter() {
         if (selectedFilter == null) {
             selectedFilter = FilterManager.getPrefSavedFilter();
@@ -115,5 +119,4 @@ public class ERPartnersPresenter extends BasePresenter<ERPartnersView> {
         view.setDistance(selectedFilter.getDistance());
         return selectedFilter;
     }
-
 }

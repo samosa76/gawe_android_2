@@ -19,6 +19,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import de.hdodenhof.circleimageview.CircleImageView;
+import gawe.imb.karya.model.modules.DynamicLinkService;
 import gawe.imb.karya.presenter.router.signUp.SignUpPresenter;
 import gawe.imb.karya.presenter.router.signUp.SignUpView;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -123,7 +124,7 @@ public class SignUpActivity extends MvpActivity<SignUpPresenter> implements Sign
                         return;
                     }
 
-                    response.targetUI().presenter.uploadImage(
+                    response.targetUI().presenter.imageSelected(
                             imageCode,
                             response.data().getFile()
                     );
@@ -163,6 +164,43 @@ public class SignUpActivity extends MvpActivity<SignUpPresenter> implements Sign
     @Override
     public void errorUpdateProfileImage(String message) {
         ivBackgroundProfile.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public String retrieveReferrerId() {
+        DynamicLinkService service = new DynamicLinkService();
+        return service.getCode(this);
+    }
+
+    @Override
+    public void showLoadingCreateUser() {
+        toggleView(false);
+    }
+
+    @Override
+    public void hideLoadingCreateUser() {
+        toggleView(true);
+    }
+
+    @Override
+    public void failedCreateUser(Throwable throwable) {
+        toggleView(true);
+    }
+
+    @Override
+    public void successCreateUser() {
+        toggleView(false);
+    }
+
+    private void toggleView(boolean enabled) {
+        ivBackgroundProfile.setEnabled(enabled);
+        ivImage.setEnabled(enabled);
+        btnUploadProfile.setEnabled(enabled);
+        progressProfile.setEnabled(enabled);
+        etName.setEnabled(enabled);
+        etPhone.setEnabled(enabled);
+        cbTOS.setEnabled(enabled);
+        btnRegister.setEnabled(enabled);
     }
 
     @Override

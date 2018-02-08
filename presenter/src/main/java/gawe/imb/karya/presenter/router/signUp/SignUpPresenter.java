@@ -4,7 +4,9 @@ import com.google.common.base.Strings;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import gawe.imb.karya.model.manager.UserManager;
 import gawe.imb.karya.presenter.base.BasePresenter;
@@ -23,12 +25,14 @@ public class SignUpPresenter extends BasePresenter<SignUpView> {
     private List<String> pickOptions;
     private static String PICK_CAMERA = "Camera";
     private static String PICK_GALLERY = "Gallery";
+    private Map<Integer, File> mapImages;
 
     public SignUpPresenter(SignUpView view) {
         attachView(view);
         pickOptions = new ArrayList<>();
         pickOptions.add(PICK_CAMERA);
         pickOptions.add(PICK_GALLERY);
+        mapImages = new HashMap<>();
     }
 
     public void extractData(String accountId, String phone) {
@@ -77,7 +81,6 @@ public class SignUpPresenter extends BasePresenter<SignUpView> {
     }
 
     public void imageUserCanceled() {
-
     }
 
     public void uploadImage(int imageCode, File file) {
@@ -100,7 +103,41 @@ public class SignUpPresenter extends BasePresenter<SignUpView> {
         }
     }
 
-    public void onButtonRegisterClicked() {
+    public void imageSelected(int imageCode, File file) {
+        mapImages.put(imageCode, file);
+    }
 
+    public void onButtonRegisterClicked() {
+        //TODO perlu image?
+
+        String uplineId = view.retrieveReferrerId();
+        File profile = mapImages.get(CODE_PROFILE);
+        view.showLoadingCreateUser();
+        if (mapImages.get(CODE_PROFILE) != null) {
+            addDisposable(
+                    UserManager.uploadProfileEmployer(accountId, profile, CODE_PROFILE)
+                            .subscribe(
+                                    uploadResponse -> createUser(uplineId, uploadResponse.getDownloadUrl()),
+                                    throwable -> {
+                                        view.hideLoadingCreateUser();
+                                        view.failedCreateUser(throwable);
+                                    }
+                            )
+            );
+        } else {
+            createUser(uplineId, null);
+        }
+
+    }
+
+    private void createUser(String uplineId, String downloadUrl) {
+        UserManager.createNewUser().subscribe(() -> {
+            view.hideLoadingCreateUser();
+            view.successCreateUser();
+        }, throwable ->
+        {
+            view.hideLoadingCreateUser();
+            view.failedCreateUser(throwable);
+        });
     }
 }

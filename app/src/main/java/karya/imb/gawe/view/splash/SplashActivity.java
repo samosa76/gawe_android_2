@@ -34,6 +34,7 @@ import karya.imb.gawe.view.selectRole.SelectRoleActivity;
 
 /**
  * Created by korneliussendy on 1/22/18.
+ *
  */
 
 public class SplashActivity extends MvpActivity<SplashPresenter> implements SplashView {

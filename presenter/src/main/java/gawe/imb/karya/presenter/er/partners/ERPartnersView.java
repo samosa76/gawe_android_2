@@ -30,4 +30,5 @@ public interface ERPartnersView extends BaseView {
 
     void dataLoadedZeroResult();
 
+    void openPartnerDetails(GaweBrowse partner, String categoryId);
 }
