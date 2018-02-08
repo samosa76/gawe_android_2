@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Gawe</string>
+
+    <string name="FACEBOOK_APP_ID">1592193544169410</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">5ef3b55ae16170d43b0fcc8712fc6f02</string>
+    <string name="google_map_api_key">AIzaSyD4hEHyIFjXf9V3QbH0pqL2HyqnVqJyC4E</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="confirm">Confirm</string>
+    <string name="report">Report</string>
+    <string name="no_permission">No Permission</string>
+    <string name="failed">Failed</string>
+    <string name="loading">Loading</string>
+    <string name="male">pria</string>
+    <string name="female">wanita</string>
+    <string name="underline"><u>%1$s</u></string>
+    <string name="call">Call</string>
+    <string name="n_seconds">%1$d second(s)</string>
+    <string name="exit">Exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="try_again">Try Again</string>
+    <string name="logout">Logout</string>
+
+    <string name="text_rationale_location">Location permission required to search job</string>
+    <string name="text_rationale_location_splash">Location permission required running application</string>
+    <string name="text_rationale_location_open_settings">Location permission denied, please open settings and activate location permission</string>
+    <string name="text_should_activate_location_service">Please enable your location service</string>
+    <string name="text_gps_not_enable">Please activate your GPS</string>
+
+    <string name="act_sign_up_title">PROFILE</string>
+    <string name="act_sign_up_name">Nama sesuai KTP* : </string>
+    <string name="act_sign_up_id_number">KTP / ID : </string>
+    <string name="act_sign_up_email">Email : </string>
+    <string name="act_sign_up_ktp">KTP : </string>
+    <string name="act_sign_up_ktm">ID lain : </string>
+    <string name="act_sign_up_phone">No. HP* : </string>
+    <string name="act_sign_up_gender">Kelamin* : </string>
+    <string name="act_sign_up_btn">REGISTER</string>
+    <string name="act_sign_up_verified">VERIFIED</string>
+    <string name="act_sign_up_please_wait">mohon menunggu</string>
+    <string name="act_sign_up_updating_data">data updating</string>
+    <string name="act_sign_up_update_success">update is successful</string>
+    <string name="act_sign_up_text_under_picture">*mohon upload foto anda dan pastikan wajah anda terlihat jelas dan terang. Tim Gawe akan memverifikasi dalam 3 hari kerja.</string>
+    <string name="act_sign_up_alert_logout">Anda yakin ingin keluar?</string>
+    <string name="act_sign_up_referral">Referral Code : </string>
+    <string name="act_sign_up_popup_content">Info popup</string>
+    <string name="act_sign_up_explanation_asteriks">(*) harus diisi</string>
+    <string name="act_sign_up_err_still_uploading_image">upload gambar sedang dalam proses</string>
+    <string name="act_sign_up_validating_ref_code">validating the referral code</string>
+    <string name="act_sign_up_invalid_ref_code">invalid referral code</string>
+    <string name="act_sign_up_database_error">Error : %1$s\nterjadi kegagalan, mohon coba kembali</string>
+    <string name="act_sign_up_failed_register">registrasi gagal, silakan ulangi kembali</string>
+    <string name="act_sign_up_upload_profile_failed">upload foto profil gagal</string>
+    <string name="act_sign_up_upload_ktp_failed">upload KTP gagal</string>
+    <string name="act_sign_up_upload_ktm_failed">upload ID gagal</string>
+    <string name="act_sign_up_tos_text">Dengan menekan tombol REGISTER atau DAFTAR, berarti anda menyetujui Syarat dan Ketentuan dari GAWE</string>
+    <string name="act_sign_up_tos_button"><u>Lihat Syarat dan Ketentuan</u></string>
+    <string name="act_sign_up_error_empty_name">nama tidak boleh kosong</string>
+    <string name="act_sign_up_error_empty_email">email tidak boleh kosong</string>
+    <string name="act_sign_up_error_empty_phone">nomor HP tidak boleh kosong</string>
+    <string name="act_sign_up_error_invalid_email">email tidak benar</string>
+    <string name="act_sign_up_error_unchecked_tos">Harap menyetujui Syarat dan Ketentuan dari GAWE untuk melakukan REGISTRASI atau PENDAFTARAN</string>
+
+
+</resources>

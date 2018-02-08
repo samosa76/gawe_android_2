@@ -1,0 +1,734 @@
+{
+  "project_info": {
+    "project_number": "678774367131",
+    "firebase_url": "https://karya-e078c.firebaseio.com",
+    "project_id": "karya-e078c",
+    "storage_bucket": "karya-e078c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:42ed79fa0a8a6a26",
+        "android_client_info": {
+          "package_name": "karya.imb.employee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-rpmrh8dnkve6i3kk2o9n495i91dssqd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.employee",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:f480cfabc66c468a",
+        "android_client_info": {
+          "package_name": "karya.imb.employer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-qkifjlu89n1lpu7u116fut3lsgqvsjid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.employer",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:3805d39c037307b2",
+        "android_client_info": {
+          "package_name": "karya.imb.gawe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-opgf7rn6o1a4t1udqt9d6uma0m6rjpp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.gawe",
+            "certificate_hash": "fa77e0daf09cc51be42d92e43ab5b4a9b9a0e532"
+          }
+        },
+        {
+          "client_id": "678774367131-tntagcfg8u870nbfctv48s0smr9c79bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.gawe",
+            "certificate_hash": "5210b86fdcfba94a7c0d5a17ec273be3e11b75f3"
+          }
+        },
+        {
+          "client_id": "678774367131-ri7g6e68n1outchb2htstmelddvnjmnd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.gawe",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:45ba9cd0b77d8bfd",
+        "android_client_info": {
+          "package_name": "karya.gawe.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-3hj3kes72k1ik8qt24i3839rjg57cp95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.gawe.partner",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:6954f6db2dd829df",
+        "android_client_info": {
+          "package_name": "karya.gawe.partner.sandbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-ed34h7ktp59el4719ilk2q74e5pi0pr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.gawe.partner.sandbox",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:eef615ba1ea1f243",
+        "android_client_info": {
+          "package_name": "karya.imb.gawe.sandbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-72kld42joaqv6cari7h7n0e2laislqcr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "karya.imb.gawe.sandbox",
+            "certificate_hash": "c19c6b2b2ebe7890bc21dbafe0223b7aa411a768"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:6de315d2cee63b99",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.gawesocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-6et7rsr3govmik4h0rj23tl2sgsqu614.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.gawesocial",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:09c067c2566127f0",
+        "android_client_info": {
+          "package_name": "asia.gawe.chat.gawechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-m0jo29m2fb86t4j5cv95spj7o5hlhklj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.chat.gawechat",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:ebd67ee5c7b2e2e8",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.gawechatjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-o1ne45ebs6rra2o2tnh9soluhoc2qced.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.gawechatjob",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:e83f1e3fbf2a9a47",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.gawemarketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-mvfj69am4v7jvgqoovr40s1bh107lat6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.gawemarketing",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:348b16041c707a6f",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-lvh2b527dls4b8e1aghtq6srnid5jlfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.demo",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:6f67652a9ab75aba",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.demosocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-u12608bog8r5uro88hf01omlmvfg0grg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.demosocial",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:46a51b9d0dc5dac4",
+        "android_client_info": {
+          "package_name": "asia.gawe.social.gawedynamic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-ufp4j0cavdhbp76986ae99vn2ppo1lsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asia.gawe.social.gawedynamic",
+            "certificate_hash": "038a99ed5efeff7fb406c5e14d579be59f3e6c2d"
+          }
+        },
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678774367131-b9mbj4cpcsibcj6437ih9hufe52cddlf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "imb.Gawe",
+                "app_store_id": "1305512852"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678774367131:android:89825e73c5343ae3",
+        "android_client_info": {
+          "package_name": "karya.imb.gaweindonesia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678774367131-h8vuei01m86t9etajc4fb6gpfsfqdt66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzP8RUOZWKn9ukTUtibX6xIoPReahSxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

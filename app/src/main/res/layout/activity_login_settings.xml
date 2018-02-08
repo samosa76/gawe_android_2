@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_big">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_list_primary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_big">
+
+                <android.support.v7.widget.CardView
+                    style="@style/cv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/ivProfilePic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/margin_big_x"
+                    android:paddingStart="@dimen/margin_big_x"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_list_secondary"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_big">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="Remove account from phone"
+                    android:textColor="@color/text_red"/>
+
+                <TextView
+                    style="@style/text_small_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable quick login with this account"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

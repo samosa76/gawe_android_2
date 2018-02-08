@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vJobStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_med"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/margin_med"
+                    android:src="@drawable/ic_clock"
+                    android:tint="@color/text_secondary"/>
+
+                <TextView
+                    style="@style/text_small_italic_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Status"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    style="@style/text_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Waiting for approval"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vJobDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Pekerjaan"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_primary"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_med"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/text_secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.4"
+                        android:padding="@dimen/margin_med"
+                        android:text="Kategori"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="@dimen/margin_med">
+
+                        <TextView
+                            android:id="@+id/tvCategory"
+                            style="@style/text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="end"
+                            android:visibility="gone"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressCategory"
+                            android:layout_width="@dimen/button_icon_size_small"
+                            android:layout_height="@dimen/button_icon_size_small"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_secondary"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/margin_med"
+                    android:paddingStart="@dimen/margin_med">
+
+                    <TextView
+                        style="@style/text_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_med"
+                        android:text="Gaji"/>
+
+                    <TextView
+                        android:id="@+id/tvWage"
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_med"
+                        android:paddingStart="@dimen/margin_med"
+                        android:text="Rp. 1.000.100"/>
+
+                    <TextView
+                        android:id="@+id/tvNegotiable"
+                        style="@style/text_italic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_med"
+                        android:paddingStart="@dimen/margin_med"
+                        android:text="Negotiable"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_primary"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/margin_med"
+                    android:paddingStart="@dimen/margin_med">
+
+                    <TextView
+                        style="@style/text_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_med"
+                        android:text="Detail Pekerjaan"/>
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_med"
+                        android:paddingStart="@dimen/margin_med"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_secondary"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/margin_med"
+                    android:paddingStart="@dimen/margin_med">
+
+                    <TextView
+                        style="@style/text_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_med"
+                        android:text="Alamat"/>
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_med"
+                        android:paddingStart="@dimen/margin_med"/>
+
+                    <RelativeLayout
+                        android:id="@+id/vNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_med"
+                        android:paddingStart="@dimen/margin_med">
+
+                        <ImageView
+                            android:id="@+id/ivNote"
+                            android:layout_width="@dimen/button_icon_size"
+                            android:layout_height="@dimen/button_icon_size"
+                            android:layout_alignParentStart="true"
+                            android:padding="@dimen/margin_small"
+                            android:src="@drawable/ic_add_note"/>
+
+                        <TextView
+                            android:id="@+id/tvNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/ivNote"
+                            android:paddingStart="@dimen/margin_med"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/drop_shadow"/>
+
+            <LinearLayout
+                android:id="@+id/vEmployer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employer"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_primary"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/vButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnShowEmployer"
+                            style="@style/btn_transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CLICK TO CONTACT"
+                            android:textColor="@color/colorAccent"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressBarEmployer"
+                            android:layout_width="@dimen/button_icon_size"
+                            android:layout_height="@dimen/button_icon_size"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/margin_small"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vEmployerDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_med"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvEmployerName"
+                            style="@style/text_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RelativeLayout
+                            android:id="@+id/vPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivCellphone"
+                                android:layout_width="@dimen/button_icon_size"
+                                android:layout_height="@dimen/button_icon_size"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginEnd="@dimen/margin_med"
+                                android:padding="@dimen/margin_small"
+                                android:src="@drawable/ic_call_2"
+                                android:tint="@color/text_secondary"/>
+
+                            <TextView
+                                android:id="@+id/tvEmployerPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/ivCellphone"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vPhoneAction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_med"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <ImageView
+                                android:id="@+id/ivCall"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/button_icon_size"
+                                android:layout_weight="1"
+                                android:padding="@dimen/margin_small"
+                                android:src="@drawable/ic_call_2"
+                                android:tint="@color/cpb_green"/>
+
+                            <ImageView
+                                android:id="@+id/ivMessage"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/button_icon_size"
+                                android:layout_marginEnd="@dimen/margin_big_x"
+                                android:layout_marginStart="@dimen/margin_big_x"
+                                android:layout_weight="1"
+                                android:padding="@dimen/margin_small"
+                                android:src="@drawable/ic_message_2"
+                                android:tint="@color/cpb_blue_dark"/>
+
+                            <ImageView
+                                android:id="@+id/ivAddContact"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/button_icon_size"
+                                android:layout_weight="1"
+                                android:padding="@dimen/margin_small"
+                                android:src="@drawable/ic_add_contact_2"
+                                android:tint="@color/text_secondary"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/drop_shadow"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btnApply"
+                style="@style/btn_accent_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_big_x"
+                android:layout_marginEnd="@dimen/margin_big_x"
+                android:layout_marginStart="@dimen/margin_big_x"
+                android:layout_marginTop="@dimen/margin_med"
+                android:text="MASUKKAN LAMARAN"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:textColor="@color/text_red"
+                android:id="@+id/btnCancel"
+                style="@style/btn_transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel Ads"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

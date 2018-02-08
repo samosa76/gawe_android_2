@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+
+    <!--STYLE VIEW-->
+
+
+    <style name="text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/text</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_light" parent="text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_italic" parent="text">
+        <item name="fontPath">fonts/SF UI Text Italic.otf</item>
+    </style>
+
+    <style name="text_secondary" parent="text">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="text_small" parent="text">
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="text_small_secondary" parent="text_small">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="text_small_light" parent="text_light">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="text_small_italic" parent="text_small">
+        <item name="fontPath">fonts/SF UI Text Italic.otf</item>
+    </style>
+
+    <style name="text_small_italic_secondary" parent="text_small_italic">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="text_notif" parent="text_small">
+        <item name="android:minHeight">@dimen/notif_size_small</item>
+        <item name="android:minWidth">@dimen/notif_size_small</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/circular_red_notif</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="text_bold" parent="text">
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+
+    <style name="text_title" parent="text">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="fontPath">fonts/Roboto-Black.ttf</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_subtitle" parent="text">
+        <item name="android:padding">@dimen/margin_med</item>
+        <item name="android:layout_margin">@dimen/margin_med</item>
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+
+    <style name="radio_button" parent="android:Widget.Holo.Light.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="imgBtn">
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="cv" parent="CardView">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+
+    <style name="cv_not_rounded" parent="cv">
+        <item name="cardCornerRadius">0dp</item>
+    </style>
+
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+    </style>
+
+    <style name="edt" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="edt_large" parent="android:Widget.Holo.Light.EditText">
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="edt_input_code" parent="edt_large">
+        <item name="android:hint">0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:maxLength">1</item>
+    </style>
+
+    <style name="btn" parent="android:Widget.Holo.Light.Button">
+        <!--<item name="android:background">@drawable/btn_default_holo_light</item>-->
+        <item name="android:minHeight">@dimen/min_size</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="btn_transparent" parent="btn">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+
+
+    <style name="btn_green" parent="btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/button</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="btn_accent" parent="btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="btn_red" parent="btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/text_red</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="btn_rounded" parent="android:Widget.Holo.Light.Button">
+        <item name="android:minHeight">@dimen/min_size</item>
+        <item name="fontPath">fonts/SF UI Text Regular.otf</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="btn_transparent_login" parent="btn_rounded">
+        <item name="android:minHeight">@dimen/min_size_small</item>
+        <item name="fb_defaultColor">@color/button_red</item>
+        <item name="fb_radius">@dimen/min_size</item>
+        <item name="fb_textColor">@color/white</item>
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+
+    <style name="btn_red_rounded" parent="btn_rounded">
+        <item name="android:minHeight">@dimen/min_size_small</item>
+        <item name="fb_defaultColor">@color/button_red</item>
+        <item name="fb_radius">@dimen/min_size</item>
+        <item name="fb_textColor">@color/white</item>
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+
+    <style name="btn_accent_rounded" parent="btn_rounded">
+        <item name="android:minHeight">@dimen/min_size_small</item>
+        <item name="fb_defaultColor">@color/colorAccent</item>
+        <item name="fb_radius">@dimen/min_size</item>
+        <item name="fb_textColor">@color/white</item>
+        <item name="fontPath">fonts/SF UI Text Bold.otf</item>
+    </style>
+</resources>

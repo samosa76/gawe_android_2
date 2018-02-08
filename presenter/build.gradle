@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.myCompileSdkVersion.toInteger()
+    buildToolsVersion project.myBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion project.myMinSdkVersion.toInteger()
+        targetSdkVersion project.myTargetSdkVersion.toInteger()
+        versionCode project.myVersionCode.toInteger()
+        versionName project.myVersionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    testApi 'junit:junit:4.12'
+    androidTestApi 'com.android.support.test:runner:1.0.1'
+    androidTestApi 'com.android.support.test.espresso:espresso-core:3.0.1'
+    api project(':mainlibs')
+    api project(':model')
+}

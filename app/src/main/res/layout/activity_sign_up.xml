@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_big">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_primary"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_big"
+                        android:layout_marginTop="@dimen/margin_big"
+                        android:gravity="center_horizontal"
+                        android:text="lengkapi data anda"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/margin_big"
+                        android:layout_marginStart="@dimen/margin_big"
+                        android:background="@color/text_secondary"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_big">
+
+                        <ImageView
+                            android:id="@+id/ivBackgroundProfile"
+                            android:layout_width="@dimen/button_icon_size"
+                            android:layout_height="@dimen/button_icon_size"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_camera_add"
+                            android:tint="@color/text_secondary"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivImage"
+                            android:layout_width="@dimen/profile_pic_width"
+                            android:layout_height="@dimen/profile_pic_height"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            app:civ_border_color="@color/text_secondary"
+                            app:civ_border_width="2dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressProfile"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/button_icon_size"
+                            android:layout_height="@dimen/button_icon_size"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btnUploadProfile"
+                        style="@style/btn_red_rounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_big"
+                        android:text="UPLOAD FOTO DIRI ANDA"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_secondary"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_big"
+                        android:paddingStart="@dimen/margin_big"
+                        android:paddingTop="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Name"/>
+
+                            <TextView
+                                style="@style/text_small_italic_secondary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="*Sesuai KTP"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/etName"
+                            style="@style/edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6"
+                            android:background="@color/transparent"
+                            android:enabled="false"
+                            android:gravity="end"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:padding="@dimen/margin_med"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_primary"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_big"
+                        android:paddingStart="@dimen/margin_big"
+                        android:paddingTop="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.4"
+                            android:text="No Telp"/>
+
+                        <EditText
+                            android:id="@+id/etPhone"
+                            style="@style/edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6"
+                            android:background="@color/transparent"
+                            android:enabled="false"
+                            android:gravity="end"
+                            android:hint="Phone"
+                            android:inputType="phone"
+                            android:padding="@dimen/margin_med"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/margin_big"
+                android:paddingStart="@dimen/margin_big">
+
+                <CheckBox
+                    android:id="@+id/cbTOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_med"
+                    android:layout_marginStart="@dimen/margin_big"/>
+
+                <TextView
+                    style="@style/text_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_med"
+                    android:layout_toStartOf="@id/cbTOS"
+                    android:gravity="end"
+                    android:text="With this I agree with the terms and condition of gawe apps"
+                    android:textColor="@color/colorAccent"/>
+
+            </RelativeLayout>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btnRegister"
+                style="@style/btn_accent_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_big_xx"
+                android:text="REGISTER"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

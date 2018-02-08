@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="karya.imb.gawe">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".GaweApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID"/>
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN"/>
+        <!--disable App Events for your Account Kit-->
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+
+        <!--<activity-->
+        <!--android:name="com.facebook.accountkit.ui.AccountKitActivity"-->
+        <!--android:theme="@style/AppLoginTheme"-->
+        <!--tools:replace="android:theme"/>-->
+
+        <activity android:name=".view.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.login.LoginActivity"/>
+        <activity android:name=".view.main.MainActivity"/>
+        <activity android:name=".view.selectRole.SelectRoleActivity"/>
+        <activity android:name=".view.signUp.SignUpActivity"/>
+        <activity
+            android:name=".view.er.intro.ErIntroActivity"/>
+        <activity android:name=".view.er.home.ERHomeActivity"/>
+        <activity android:name=".view.er.partnerFilter.ERFilterActivity"/>
+        <activity android:name=".view.er.pickCategory.ERPickCategoryActivity"/>
+        <activity android:name=".view.er.intro2.ERIntroActivity"/>
+        <activity android:name=".view.er.adsDetails.ERAdsDetailsActivity"/>
+        <activity android:name=".view.preLogin.PreLoginActivity"/>
+        <activity android:name=".view.loginSettings.LoginSettingsActivity"/>
+        <activity android:name=".view.er.adsAdd.ERAdsAddActivity"/>
+        <activity android:name=".view.er.urgentForm.ERUrgentFormActivity"/>
+
+    </application>
+</manifest>

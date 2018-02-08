@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/parentDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filter"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/vGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_primary"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.4"
+                            android:padding="@dimen/margin_med"
+                            android:text="Gender"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6">
+
+                            <Spinner
+                                android:id="@+id/spinGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="end"
+                                android:textAlignment="textEnd"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBarGender"
+                                android:layout_width="@dimen/button_icon_size_small"
+                                android:layout_height="@dimen/button_icon_size_small"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_med"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_secondary"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:padding="@dimen/margin_med"
+                            android:text="Type"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <Spinner
+                                android:id="@+id/spinType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="end"
+                                android:textAlignment="textEnd"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBarType"
+                                android:layout_width="@dimen/button_icon_size_small"
+                                android:layout_height="@dimen/button_icon_size_small"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_med"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_primary"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:padding="@dimen/margin_med"
+                            android:text="Category"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <EditText
+                                android:id="@+id/etCategory"
+                                style="@style/edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:focusable="false"
+                                android:gravity="end"
+                                android:hint="Category"
+                                android:padding="@dimen/margin_med"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBarCategory"
+                                android:layout_width="@dimen/button_icon_size_small"
+                                android:layout_height="@dimen/button_icon_size_small"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_med"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/drop_shadow"/>
+
+            <LinearLayout
+                android:id="@+id/parentSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sort"/>
+
+                <LinearLayout
+                    android:id="@+id/vSort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_primary"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:padding="@dimen/margin_med"
+                            android:text="Sort by"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <Spinner
+                                android:id="@+id/spinSort"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="end"
+                                android:textAlignment="textEnd"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBarSort"
+                                android:layout_width="@dimen/button_icon_size_small"
+                                android:layout_height="@dimen/button_icon_size_small"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_med"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/drop_shadow"/>
+
+            <LinearLayout
+                android:id="@+id/parentDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_list_primary"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_list_primary"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_med"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:padding="@dimen/margin_med"
+                            android:text="Search Radius"/>
+
+                        <EditText
+                            android:id="@+id/etDistance"
+                            style="@style/edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:background="@color/transparent"
+                            android:focusable="false"
+                            android:gravity="end"
+                            android:hint="0 km"
+                            android:padding="@dimen/margin_med"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:id="@+id/seekBarDistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_med"
+                        android:paddingEnd="@dimen/margin_big_xx"
+                        android:paddingStart="@dimen/margin_big_xx"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/drop_shadow"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btnSave"
+                style="@style/btn_accent_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_big_x"
+                android:layout_marginEnd="@dimen/margin_big_x"
+                android:layout_marginStart="@dimen/margin_big_x"
+                android:layout_marginTop="@dimen/margin_med"
+                android:text="FILTER"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

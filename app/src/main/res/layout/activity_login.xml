@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:id="@+id/vLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="180dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_logo_white_shadow"/>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnLogin"
+            style="@style/btn_transparent_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/min_size"
+            android:layout_margin="@dimen/margin_big"
+            android:text="Log in with phone no."
+            fancy:fb_defaultColor="@color/login_white_transparent"
+            fancy:fb_radius="5dp"
+            fancy:fb_textColor="@color/white">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+        <!--<Button-->
+        <!--android:id="@+id/btnLogin"-->
+        <!--style="@style/btn_transparent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/min_size"-->
+        <!--android:layout_margin="@dimen/margin_big"-->
+
+        <!--android:visibility="visible"/>-->
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loaderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/button_icon_size"
+            android:layout_height="@dimen/button_icon_size"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
