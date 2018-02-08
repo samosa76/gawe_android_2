@@ -1,5 +1,8 @@
 package karya.imb.gawe.view.er.historyUrgent;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+
 import java.util.List;
 
 import gawe.imb.karya.model.objects.GaweHistoryUrgent;
@@ -21,6 +24,11 @@ public class ERHistoryUrgentActivity extends ERBaseActivity<ERHistoryUrgentPrese
     @Override
     public int setContentView() {
         return R.layout.activity_er_history_urgent;
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
