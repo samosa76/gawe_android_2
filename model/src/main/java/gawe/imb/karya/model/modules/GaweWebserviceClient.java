@@ -56,6 +56,7 @@ public class GaweWebserviceClient {
                     .addHeader("lang", Resources.getSystem().getConfiguration().locale.getLanguage());
 
             if (BuildConfig.DEBUG) {
+                Log.d("generatedToken", generateToken());
                 Log.d("url", "" + url.toString());
             }
             final Request request = requestBuilder.build();
