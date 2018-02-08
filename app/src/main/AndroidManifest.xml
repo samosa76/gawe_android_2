@@ -75,6 +75,7 @@
         <activity android:name=".view.er.urgentForm.ERUrgentFormActivity"/>
         <activity android:name=".view.er.historyEmployee.ERHistoryEmployeeActivity"/>
         <activity android:name=".view.er.historyUrgent.ERHistoryUrgentActivity"/>
+        <activity android:name=".view.er.credit.ERMyCreditActivity"/>
 
     </application>
 </manifest>
