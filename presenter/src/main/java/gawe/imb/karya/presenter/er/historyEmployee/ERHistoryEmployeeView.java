@@ -9,7 +9,7 @@ import gawe.imb.karya.presenter.base.BaseView;
  * Created by korneliussendy on 2/7/18.
  */
 
-interface ERHistoryEmployeeView extends BaseView {
+public interface ERHistoryEmployeeView extends BaseView {
 
     void showLoadingLoadHistoryEmployee();
 
