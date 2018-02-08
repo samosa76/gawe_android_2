@@ -9,25 +9,25 @@ import gawe.imb.karya.presenter.base.BaseView;
  * Created by korneliussendy on 2/7/18.
  */
 
-public abstract class ERHistoryUrgentView implements BaseView {
+public interface ERHistoryUrgentView extends BaseView {
 
-    public abstract void showLoadingLoadHistoryEmployee();
+    void showLoadingLoadHistoryEmployee();
 
-    public abstract void hideLoadingLoadHistoryEmployee();
+    void hideLoadingLoadHistoryEmployee();
 
-    public abstract void failedLoadingLoadHistoryEmployee(Throwable throwable);
+    void failedLoadingLoadHistoryEmployee(Throwable throwable);
 
-    public abstract void successLoadingLoadHistoryEmployee(List<GaweHistoryUrgent> list);
+    void successLoadingLoadHistoryEmployee(List<GaweHistoryUrgent> list);
 
-    public abstract void showLoadingLoadMoreHistoryEmployee();
+    void showLoadingLoadMoreHistoryEmployee();
 
-    public abstract void hideLoadingLoadMoreHistoryEmployee();
+    void hideLoadingLoadMoreHistoryEmployee();
 
-    public abstract void failedLoadingLoadMoreHistoryEmployee(Throwable throwable);
+    void failedLoadingLoadMoreHistoryEmployee(Throwable throwable);
 
-    public abstract void successLoadingLoadMoreHistoryEmployee(List<GaweHistoryUrgent> list);
+    void successLoadingLoadMoreHistoryEmployee(List<GaweHistoryUrgent> list);
 
-    public abstract void toHistoryUrgentDetailsPage(GaweHistoryUrgent data);
+    void toHistoryUrgentDetailsPage(GaweHistoryUrgent data);
 
-    public abstract void clearList();
+    void clearList();
 }
