@@ -118,9 +118,9 @@ public interface ERPartnerDetailsView extends BaseView {
 
     void openReviewListPage(String id, String categoryId);
 
-    void openCallPage();
+    void openCallPage(String phoneNumber);
 
-    void openMessagePage();
+    void openMessagePage(String partnerId);
 
-    void openAddToContactPage();
+    void openAddToContactPage(String phoneNumber);
 }

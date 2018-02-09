@@ -94,15 +94,18 @@ public class ERPartnerDetailsPresenter extends BasePresenter<ERPartnerDetailsVie
     }
 
     public void onCallClicked() {
-        view.openCallPage();
+        String phoneNumber = "";
+        view.openCallPage(phoneNumber);
     }
 
     public void onMessageClicked() {
-        view.openMessagePage();
+        String partnerId = "";
+        view.openMessagePage(partnerId);
     }
 
     public void onAddToContactClicked() {
-        view.openAddToContactPage();
+        String phoneNumber = "";
+        view.openAddToContactPage(phoneNumber);
     }
 
     public void onTopUpClicked() {
