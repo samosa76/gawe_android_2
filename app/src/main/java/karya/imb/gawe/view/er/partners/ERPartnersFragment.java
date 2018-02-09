@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -16,13 +15,13 @@ import java.util.List;
 
 import butterknife.BindView;
 import de.hdodenhof.circleimageview.CircleImageView;
+import gawe.imb.karya.mainlibs.utils.MapsGeo;
 import gawe.imb.karya.model.objects.GaweBrowse;
 import gawe.imb.karya.presenter.er.partners.ERPartnersPresenter;
 import gawe.imb.karya.presenter.er.partners.ERPartnersView;
 import karya.imb.gawe.GlideApp;
 import karya.imb.gawe.R;
 import karya.imb.gawe.utils.BaseRecyclerAdapter;
-import gawe.imb.karya.mainlibs.utils.MapsGeo;
 import karya.imb.gawe.view.er.BaseTabFragment;
 import karya.imb.gawe.view.er.partnerFilter.ERFilterActivity;
 
@@ -37,6 +36,9 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
     @BindView(R.id.tvDistance) TextView tvDistance;
     @BindView(R.id.rv) RecyclerView rv;
     @BindView(R.id.progressBrowse) ProgressBar progressBrowse;
+
+    public static final String KEY_GAWE_BROWSE = "key_gawe_browse";
+    public static final String KEY_SELECTED_CATEGORY = "key_gawe_selected";
 
     @Override
     protected ERPartnersPresenter createPresenter() {
@@ -170,6 +172,7 @@ public class ERPartnersFragment extends BaseTabFragment<ERPartnersPresenter> imp
 
     @Override
     public void openPartnerDetails(GaweBrowse partner, String categoryId) {
+        //TODO ke halaman details kasi gawebrowse dengan key dan kasi categoryId
 
     }
 

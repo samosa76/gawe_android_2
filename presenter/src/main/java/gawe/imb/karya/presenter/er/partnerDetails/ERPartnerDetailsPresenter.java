@@ -93,6 +93,18 @@ public class ERPartnerDetailsPresenter extends BasePresenter<ERPartnerDetailsVie
         view.successLoadHire();
     }
 
+    public void onCallClicked() {
+        view.openCallPage();
+    }
+
+    public void onMessageClicked() {
+        view.openMessagePage();
+    }
+
+    public void onAddToContactClicked() {
+        view.openAddToContactPage();
+    }
+
     public void onTopUpClicked() {
         view.openTopUpPage();
     }
@@ -105,14 +117,15 @@ public class ERPartnerDetailsPresenter extends BasePresenter<ERPartnerDetailsVie
         view.openReviewListPage(partner.getId(), categoryId);
     }
 
-    private void loadPartner() {
+
+    public void loadPartner() {
         view.showLoadingPartner();
         view.hideLoadingPartner();
         view.failedLoadPartner(new Throwable());
         view.successLoadPartner(partner);
     }
 
-    private void loadOtherCategories() {
+    public void loadOtherCategories() {
         //TODO also load category
 
         view.showLoadingCategories();
@@ -121,49 +134,49 @@ public class ERPartnerDetailsPresenter extends BasePresenter<ERPartnerDetailsVie
         view.successLoadCategories(listFriend);
     }
 
-    private void loadFriends() {
+    public void loadFriends() {
         view.showLoadingFriends();
         view.hideLoadingFriends();
         view.failedLoadFriends(new Throwable());
         view.successLoadFriends(listFriend);
     }
 
-    private void loadAchievement() {
+    public void loadAchievement() {
         view.showLoadingAchievement();
         view.hideLoadingAchievement();
         view.failedLoadAchievement(new Throwable());
         view.successLoadAchievement(listAchievement);
     }
 
-    private void loadRate() {
+    public void loadRate() {
         view.showLoadingRate();
         view.hideLoadingRate();
         view.failedLoadRate(new Throwable());
         view.successLoadRate(listRate);
     }
 
-    private void loadStatistics() {
+    public void loadStatistics() {
         view.showLoadingStatistics();
         view.hideLoadingStatistics();
         view.failedLoadStatistics(new Throwable());
         view.successLoadStatisctics(listStatistics);
     }
 
-    private void loadReviews() {
+    public void loadReviews() {
         view.showLoadingReviews();
         view.hideLoadingReviews();
         view.failedLoadReviews(new Throwable());
         view.successLoadReviews(listReview);
     }
 
-    private void loadPartnerImages() {
+    public void loadPartnerImages() {
         view.showLoadingImages();
         view.hideLoadingImages();
         view.failedLoadImages(new Throwable());
         view.successLoadImages(listImageUrl);
     }
 
-    private void loadRequiredCredit() {
+    public void loadRequiredCredit() {
         //demo only
         Long credit = 1L;
         view.showLoadingCredit();
