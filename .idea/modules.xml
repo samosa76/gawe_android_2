@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Gawe.iml" filepath="$PROJECT_DIR$/Gawe.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\Gawe.iml" filepath="A:\Project\Gawe\gawe_android_2\Gawe.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\app\app.iml" filepath="A:\Project\Gawe\gawe_android_2\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gawe_android_2.iml" filepath="$PROJECT_DIR$/.idea/gawe_android_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mainlibs/mainlibs.iml" filepath="$PROJECT_DIR$/mainlibs/mainlibs.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\mainlibs\mainlibs.iml" filepath="A:\Project\Gawe\gawe_android_2\mainlibs\mainlibs.iml" />
       <module fileurl="file://$PROJECT_DIR$/model/model.iml" filepath="$PROJECT_DIR$/model/model.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\model\model.iml" filepath="A:\Project\Gawe\gawe_android_2\model\model.iml" />
       <module fileurl="file://$PROJECT_DIR$/presenter/presenter.iml" filepath="$PROJECT_DIR$/presenter/presenter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/presenter/presenter2.iml" filepath="$PROJECT_DIR$/presenter/presenter2.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\presenter\presenter.iml" filepath="A:\Project\Gawe\gawe_android_2\presenter\presenter.iml" />
+      <module fileurl="file://A:\Project\Gawe\gawe_android_2\presenter\presenter2.iml" filepath="A:\Project\Gawe\gawe_android_2\presenter\presenter2.iml" />
     </modules>
   </component>
 </project>
